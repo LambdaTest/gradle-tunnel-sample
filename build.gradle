@@ -38,4 +38,6 @@ publishing {
 
 test {
     useTestNG()
+    useDefaultListeners = true // Tells TestNG to execute its default reporting structure
+    suites 'MavenParallel.xml' //location of our suite.xml
 }
